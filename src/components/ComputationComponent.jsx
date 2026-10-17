@@ -12,7 +12,7 @@ function ComputationComponent({unit, handleChangeOfUnit,
         imperialWeightErrors.stones !== ""
             ? imperialWeightErrors.stones
             : imperialWeightErrors.pounds;
-    console.log(``);
+   
     return(
         <section className="computation-part">
             <div className="computation-part-inner-container">
