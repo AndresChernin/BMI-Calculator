@@ -8,8 +8,9 @@ function OutputComponent({
     errorsImperialWeight
 }) {
     const hasErrors =
-        errorsMetric.height !== "" || errorsImperialHeight!=="" || errorsImperialWeight!==""||
-        errorsMetric.weight !== "";
+        errorsMetric.height !== "" || errorsImperialHeight.feet!=="" 
+        || errorsImperialWeight.stones!==""|| errorsImperialHeight.inches!==""
+        || errorsImperialWeight.pounds!==""||errorsMetric.weight !== "";
 
     return (
         <div className={`output-part ${hasErrors ? "output-error" : ""}`}>

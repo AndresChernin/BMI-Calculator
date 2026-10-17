@@ -201,7 +201,7 @@
           
         
         const newImperialHeightErrors= myController.controllImperialHeight(newHeightImperial);
-        
+        setImperialHeightErrors(newImperialHeightErrors );
         if(newImperialHeightErrors.feet === "" && newImperialHeightErrors.inches===""&&
           imperialWeightErrors.stones==="" && imperialWeightErrors.pounds===""){
           updateBMIData(unit,newHeightImperial, weightImperial);
@@ -210,7 +210,7 @@
           setExplanation(defaultExplanation);
         }
          
-          setImperialHeightErrors(newImperialHeightErrors );
+          
         
        
         }
@@ -231,7 +231,7 @@
           
         
         const newImperialWeightErrors= myController.controllImperialWeight(newWeightImperial);
-        
+        setImperialWeightErrors(newImperialWeightErrors);
         if(newImperialWeightErrors.stones==="" &&newImperialWeightErrors.pounds===""
          && imperialHeightErrors.feet === "" && imperialHeightErrors.inches===""){
           updateBMIData(unit,heightImperial,newWeightImperial) 
@@ -241,7 +241,7 @@
         }
         
         
-          setImperialWeightErrors(newImperialWeightErrors);
+          
          
         
       }
