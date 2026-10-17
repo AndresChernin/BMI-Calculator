@@ -151,6 +151,10 @@
 
          setHeightMetric(value);
          const newError= myController.controllMetricHeight(value);
+          setMetricErrors({
+             ...metricErrors,
+             "height": newError
+             });
          if(newError === "" && metricErrors.weight === ""){
           updateBMIData(unit,value, weightMetric);
          }
@@ -158,10 +162,7 @@
            
            setExplanation(defaultExplanation);
          }
-         setMetricErrors({
-             ...metricErrors,
-             "height": newError
-             });
+         
         }
 
         function handleWeightChangeMetric(event) {
@@ -172,6 +173,12 @@
          }
            setWeightMetric(value);
            const newError= myController.controllMetricWeight(value);
+
+           setMetricErrors({
+             ...metricErrors,
+             "weight": newError
+             });
+
            if(newError === "" && metricErrors.height === ""){
                 updateBMIData(unit,heightMetric, value);
               
@@ -179,10 +186,7 @@
            else{
             setExplanation(defaultExplanation);
            }
-         setMetricErrors({
-             ...metricErrors,
-             "weight": newError
-             });
+         
         }
         function handleHeightChangeImperial(event) {
         const { name, value } = event.target;
@@ -229,7 +233,7 @@
         const newImperialWeightErrors= myController.controllImperialWeight(newWeightImperial);
         
         if(newImperialWeightErrors.stones==="" &&newImperialWeightErrors.pounds===""
-         && imperialHeightErrors.feet === "" & imperialHeightErrors.inches===""){
+         && imperialHeightErrors.feet === "" && imperialHeightErrors.inches===""){
           updateBMIData(unit,heightImperial,newWeightImperial) 
         }
         else{
