@@ -11,13 +11,18 @@
     align-items: flex-start;
     gap:1rem;
 }
-.output-part p, .output-part h1, .output-part span{
+.output-part p, .output-part h3, .output-part span{
     color:var(--very-hell-blue-text);
     padding:0;
     margin:0;
 }
-.output-part h1{
+.output-part h2{
     margin-bottom:1rem;
+}
+.output-part h3{
+    font-weight: 650;
+    font-size: 4.375rem;
+    text-align: center;
 }
 .output-part span{
     font-weight: 600;
@@ -30,7 +35,7 @@
     background-color: #ffdddd;
 }
 
-.output-error h1,
+.output-error h2,
 .output-error p {
     color: #d32f2f;
 }

@@ -8,10 +8,7 @@ function OutputComponent({
     errorsImperialWeight,
     unit
 }) {
-    console.log(`unit: ${unit}`);
-    console.log(`Errors metric: ${JSON.stringify(errorsMetric)}`);
-    console.log(`Errors imperial height: ${JSON.stringify(errorsImperialHeight)}`);
-    console.log(`Errors imperial weight: ${JSON.stringify(errorsImperialWeight)}`);
+    
     const hasErrors = unit === "metric"
 ? errorsMetric.height !== "" ||
 errorsMetric.weight !== ""

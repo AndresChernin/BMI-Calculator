@@ -19,7 +19,7 @@
   gap:2rem;
 }
 .limitations-part-title{
-  
+ color:var(--dark-blue-text); 
   text-align: center;
   font-size: 3.438rem;
 }
