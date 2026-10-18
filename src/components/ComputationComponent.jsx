@@ -206,8 +206,9 @@ function ComputationComponent({unit, handleChangeOfUnit,
             )}
             <OutputComponent bmi={bmi} classification={classification}
                              minWeight={minWeight} maxWeight={maxWeight} errorsMetric={errorsMetric}
-                             errorsImperialHeight={errorsImperialHeight} 
-                             errorsImperialWeight={errorsImperialWeight}/>
+                             errorsImperialHeight={imperialHeightErrors} 
+                             errorsImperialWeight={imperialWeightErrors}
+                             unit={unit}/>
             </div>
         </section>
     )

@@ -145,7 +145,8 @@
         function handleHeightChangeMetric(event) {
          const value = event.target.value;
 
-         if (myController.containsWrongSymbols(value) || myController.containsNegativeValues(value)) {
+         if (myController.containsWrongSymbols(value) || myController.containsNegativeValues(value)||
+            myController.containsPointAsFirstSymbol(value)) {
               return;
          }
 
@@ -168,7 +169,8 @@
         function handleWeightChangeMetric(event) {
           const value = event.target.value;
 
-         if (myController.containsWrongSymbols(value) || myController.containsNegativeValues(value)) {
+         if (myController.containsWrongSymbols(value) || myController.containsNegativeValues(value)
+             ||myController.containsPointAsFirstSymbol(value)) {
               return;
          }
            setWeightMetric(value);
@@ -190,7 +192,8 @@
         }
         function handleHeightChangeImperial(event) {
         const { name, value } = event.target;
-        if (myController.containsWrongSymbols(value) || myController.containsNegativeValues(value)) {
+        if (myController.containsWrongSymbols(value) || myController.containsNegativeValues(value)
+         ||myController.containsPointAsFirstSymbol(value)) {
               return;
          }
          const newHeightImperial = {
@@ -219,7 +222,8 @@
 
         function handleWeightChangeImperial(event) {
          const { name, value } = event.target;
-         if (myController.containsWrongSymbols(value) || myController.containsNegativeValues(value)) {
+         if (myController.containsWrongSymbols(value) || myController.containsNegativeValues(value)
+          ||myController.containsPointAsFirstSymbol(value)) {
               return;
          }
          const newWeightImperial = {

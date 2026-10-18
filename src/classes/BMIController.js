@@ -77,6 +77,9 @@ class BMIController{
         if(value.includes("-")){containsMinus=true};
         return containsMinus;
     }
+    containsPointAsFirstSymbol(value) {
+      return value === ".";
+    }
     controllMetricHeight(height){
         if(height<50 || height >250){
             return "Height must be between 50 and 250 cm."
