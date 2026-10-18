@@ -5,12 +5,20 @@ function OutputComponent({
     maxWeight,
     errorsMetric,
     errorsImperialHeight,
-    errorsImperialWeight
+    errorsImperialWeight,
+    unit
 }) {
-    const hasErrors =
-        errorsMetric.height !== "" || errorsImperialHeight.feet!=="" 
-        || errorsImperialWeight.stones!==""|| errorsImperialHeight.inches!==""
-        || errorsImperialWeight.pounds!==""||errorsMetric.weight !== "";
+    console.log(`unit: ${unit}`);
+    console.log(`Errors metric: ${JSON.stringify(errorsMetric)}`);
+    console.log(`Errors imperial height: ${JSON.stringify(errorsImperialHeight)}`);
+    console.log(`Errors imperial weight: ${JSON.stringify(errorsImperialWeight)}`);
+    const hasErrors = unit === "metric"
+? errorsMetric.height !== "" ||
+errorsMetric.weight !== ""
+: errorsImperialHeight.feet !== "" ||
+errorsImperialHeight.inches !== "" ||
+errorsImperialWeight.stones !== "" ||
+errorsImperialWeight.pounds !== "";
 
     return (
         <div className={`output-part ${hasErrors ? "output-error" : ""}`}>
