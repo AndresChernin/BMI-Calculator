@@ -54,6 +54,9 @@ Screenshot
 
 Links
 
+Challange Page:
+https://www.frontendmentor.io/learning-paths/introduction-to-web-accessibility-mXu-9PHVsd/challenge/6647781a20fb35b1b61abb5a/start
+
 Frontend Mentor Solution: 
 https://www.frontendmentor.io/solutions/body-mass-index-calculator-using-html-css-js-react-and-mvc-gaXjRvkrnM
 
