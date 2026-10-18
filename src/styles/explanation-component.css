@@ -18,6 +18,8 @@
 }
 .title-part{
     text-align: left;
+    color:var(--dark-blue-text);
+    font-size: 4.375rem;
 }
 .explanation-text-part{
     text-align: left;

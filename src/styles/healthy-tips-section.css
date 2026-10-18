@@ -17,7 +17,7 @@
 }
 .healthy-tipp-title{
     font-size: 2.813rem;
-    
+    color:var(--dark-blue-text);
     text-align: left;
 }
 .healthy-tipp-explanation{
